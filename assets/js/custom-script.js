@@ -32,3 +32,10 @@ contactForm.addEventListener('submit', function(event) {
       });
 });
 };
+
+AOS.init({
+    duration: 600,      // durata animazione
+    easing: 'ease-in-out',
+    once: true,         // anima solo la prima volta
+    mirror: false       // non anima allo scroll inverso
+});

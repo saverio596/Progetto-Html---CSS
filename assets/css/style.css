@@ -2,6 +2,11 @@
   --black-color: #000;
   --arancione-color: #fa5001;
   --white-color: #ffffff;
+  --grey-color: #b1b1b1;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -21,13 +26,13 @@ font-family: "Bebas Neue", sans-serif;
 line-height: 1;
 }
 .title-page-hero{
-    font-size: clamp(2.1875rem, -9.1406rem + 40.25vw, 14.25rem);
+    font-size: clamp(3.1875rem, -9.1406rem + 40.25vw, 14.25rem);
     line-height: 1;
     margin-bottom: 0;
     color: var(--white-color);
 }
 .title-page{
-    font-size: clamp(2.1875rem, -9.1406rem + 36.25vw, 11.25rem);
+    font-size: clamp(3.1875rem, -12.1406rem + 36.25vw, 10.25rem);
     line-height: 1;
     margin-bottom: 0;
 }
@@ -52,14 +57,14 @@ line-height: 1;
   font-weight: 400;
   font-style: normal;
 }
-.processo-lavoro{
+.professional-experience{
   background-color: var(--black-color);
 }
 .color-white{
   color: #fff;
 }
 .subtitle-section{
-  font-size: clamp(2rem, 4rem, 5rem);
+  font-size: clamp(2rem, -6.1406rem + 16.25vw, 4.25rem);
   line-height: 1.1;
 }
 .subtitle-box{
@@ -80,6 +85,19 @@ grid-row-gap : 20px ;
   grid-column-gap: 48px;
     grid-row-gap: 48px;
     border: 1px solid #fff;
+    border-radius: 12px;
+    flex-flow: column;
+    padding: 48px 24px;
+    display: flex;
+    overflow: hidden;
+}
+.processo-lavoro-home{
+  background-color: var(--black-color);
+}
+.box-insight-black{
+  grid-column-gap: 48px;
+    grid-row-gap: 48px;
+    border: 1px solid var(--black-color);
     border-radius: 12px;
     flex-flow: column;
     padding: 48px 24px;
@@ -172,7 +190,7 @@ header{
 	font-size:20px;
 	display:inline-block;
 	vertical-align:top;
-	width:24%;
+	width: 100%;
 	position:relative;
 }
 .wrap ul.wrap-nav li a {
@@ -180,7 +198,7 @@ header{
   font-family: "Bebas Neue", sans-serif;
 	display:block;
   text-align: center;
-  font-size: clamp(2rem, 5vw + 1rem, 5.5rem);
+  font-size: clamp(3rem, 5vw + 1rem, 5.5rem);
 	padding:8px 0;
 	text-decoration:none;
 	transition-property:all .2s linear 0s;
@@ -354,12 +372,18 @@ textarea{
     align-items: center;
     display: flex;
 }
+textarea.inputfield{
+  padding-top:20px;
+}
 .section.hero{
   background: url(/assets/img/bio-saverio.webp);
     background-repeat: no-repeat;
     width: 100vw;
     background-size: cover;
     background-position: center;
+}
+.line-footer{
+  color: #fff;
 }
 header.sticky{
   position: absolute;
@@ -381,12 +405,30 @@ header.sticky .btn-open:after{
     border: 1px solid #e5e5e5;
     border-radius: 24px;
     padding: 5px 10px;
+    color: var(--white-color);
     font-size: 14px;
     font-weight: 500;
 }
-.section.about,
+.list-project a{
+text-decoration: none;
+}
+.list-project .insight-project-single{
+    border: 1px solid #e5e5e5;
+    border-radius: 24px;
+    padding: 5px 10px;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+.section.about{
+padding: 20px 0px;
+}
 section.project-grid{
-  padding: 70px 0px;
+  padding: 100px 0px;
+  background-color: var(--black-color);
+}
+.abouthome{
+  padding: 100px 0px;
 }
 .project-list{
   display: flex;
@@ -395,7 +437,14 @@ section.project-grid{
 }
 .sticky-box{
   position: sticky;
-  top: 30px;
+  top: 120px;
+}
+.list-project{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 30px;
+grid-row-gap: 30px;
 }
 .grid-services {
     display: grid;
@@ -410,7 +459,7 @@ footer{
 .txt-emotion{
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(2rem, 6rem, 6rem);
+    font-size: clamp(2.1875rem, -9.1406rem + 36.25vw, 6.25rem);
     line-height: 1;
 }
 .sticky_header.shrink {
@@ -445,4 +494,110 @@ footer{
 }
 section.service{
   padding: 90px 0px;
+}
+footer{
+  margin-top: 70px;
+  padding: 50px 0px;
+}
+.label-info-footer,
+.label-info-footer{
+  color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.link-email-footer{
+  color: #b1b1b1;
+  text-decoration: none;
+  transition-property: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -webkit-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+}
+.txt-address{
+  color: #b1b1b1;
+}
+.label-menu-footer{
+  color: #b1b1b1;
+}
+.box-email{
+  padding-bottom: 50px;
+}
+.menu-footer{
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 15px;
+}
+.menu-footer li a{
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition-property: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -webkit-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+}
+.menu-footer li a:hover{
+  color: var(--arancione-color);
+}
+.icona-footer i{
+  font-size: 22px;
+  color: #fff;
+  transition-property: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -webkit-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+}
+.icona-footer i:hover,
+.link-email-footer:hover{
+  color: var(--arancione-color);
+}
+.description-card{
+  color: var(--grey-color);
+}
+.experience-card-title{
+  font-size: 32px;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+}
+.experince-list{
+  grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    flex-flow: column;
+    display: flex;
+    padding-top: 50px;
+}
+.experience-list-card{
+  grid-column-gap: 123px;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr minmax(200px, 501px) minmax(200px, 424px);
+    grid-auto-columns: 1fr;
+    display: grid;
+    overflow: hidden;
+}
+.experince-single-card-left-box{
+  width: 180px;
+}
+.line-experience{
+  color: #fff;
+}
+/********Media Query *********/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .experience-list-card{
+    grid-column-gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .experience-list-card{
+    display: flex;
+    flex-flow: column;
+  }
+  .list-project{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

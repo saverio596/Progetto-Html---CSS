@@ -7,11 +7,11 @@
     <meta name="description" content="Breve biografia di Saverio, web designer appassionato di design e sviluppo front-end.">
     <!-- Favicon (best practice) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>About me - Saverio</title>
+    <title>Portfolio - Saverio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css" >
     <!-- Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,9 +19,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "g-v7DVcsdeufnTycG",
+      });
+   })();
+</script>
 </head>
 <body>
-    <!-- header.html -->
+      <!-- header.html -->
 <header class="sticky_header">
    <div class="container"> 
     <div class="row align-items-center">
@@ -52,104 +59,45 @@
 	<div class="wrap">
 		<ul class="wrap-nav">
 				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
+				<li><a href="/about/">About</a></li>
 				<li><a href="/portfolio/">Portofolio</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li><a href="/contact/">Contact</a></li>
 			</ul>			
 	</div>
 </div>
-    <section class="section about">
+    <section class="section intro-contact">
+        <div class="container mt-5">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-6">
+                    <h1 class="title-page">Lavori<br>recenti</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section grid-project">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="title-page">About me</h1>
-                    <img src="../assets/img/bio-saverio.webp" class="img-fluid border-radius custom-image mt-2 mb-5" alt="anteprima immagine"/>
-                    <div class="animate txt-citazione text-center col-12 col-md-8 mx-auto my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo illum aliquam excepturi distinctio molestias blanditiis tempora laborum asperiores officia magnam accusantium libero ab cum voluptatibus iste, animi fuga ipsam!</div>
-                </div>
+             <div class="list-project">
+                <a href="#" class="list-single-project">
+                    <img src="/assets/img/copertina-hotel-olimpia.webp" class="img-fluid border-radius">
+                        <div class="box-insight-project-single">
+                            <div class="insight-project-single">Design</div>
+                            <div class="insight-project-single">Devolopment</div>
+                     </div>
+                </a>
+                <a href="#" class="list-single-project">
+                    <img src="/assets/img/image-count-app.webp" class="img-fluid border-radius">
+                        <div class="box-insight-project-single">
+                            <div class="insight-project-single">Devolopment</div>
+                        </div>
+                </a>
+             </div>   
             </div>
-        </div>
-    </section>
-    <section class="section professional-experience">
-        <div class="container mt-5">
-            <div class="row py-5">
-                <div class="col-12">
-                    <div class="subtitle-box d-flex align-items-center gap-2">
-                                <img src="/assets/img/round-ball-icon.svg" class="icon-round-ball" alt="icona cerchio"/>
-                                EXPERIENCE
-                            </div>
-                     <h2 class="subtitle-section color-white">Professional experience</h2>
-                    <div class="experince-list">
-                        <div class="experience-list-card">
-                            <div class="experince-single-card-left-box">
-                                <div class="description-card text-uppercase">Apr 2024 - present</div>
-                            </div>
-                            <div class="experince-single-card-centered-box">
-                                <div class="experience-card-title">Senior designer & webflow developer</div>
-                                <div class="description-card text-uppercase">Never Before Italia</div>
-                            </div>
-                            <div class="experince-single-card-right-box">
-                                <div class="description-card">Leading design projects, creating user-focused interfaces, and building responsive websites with Webflow for seamless digital experiences.</div>
-                            </div>
-                        </div>
-                        <hr class="line-experience">
-                        <div class="experience-list-card">
-                            <div class="experince-single-card-left-box">
-                                <div class="description-card text-uppercase">Apr 2024 - present</div>
-                            </div>
-                            <div class="experince-single-card-centered-box">
-                                <div class="experience-card-title">Senior designer & webflow developer</div>
-                                <div class="description-card text-uppercase">Never Before Italia</div>
-                            </div>
-                            <div class="experince-single-card-right-box">
-                                <div class="description-card">Leading design projects, creating user-focused interfaces, and building responsive websites with Webflow for seamless digital experiences.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section processo-lavoro">
-        <div class="container mt-5">
-            <div class="row py-5">
-                <div class="col-12">
-                    <div class="grid-6">
-                        <div class="column-1">
-                            <div class="subtitle-box d-flex align-items-center gap-2">
-                                <img src="/assets/img/round-ball-icon.svg" class="icon-round-ball" alt="icona cerchio"/>
-                                WORK PROCESS
-                            </div>
-                            <h2 class="subtitle-section">My work process</h2>
-                        </div>
-                        <div class="column-2 box-insight-black">
-                            <div class="round-circle">1</div>
-                            <h3 class="title-box-insight">Lorem Impsum</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo illum aliquam excepturi distinctio molestias.</p>
-                        </div>
-                        <div class="column-3 box-insight-black">
-                            <div class="round-circle">1</div>
-                            <h3 class="title-box-insight">Lorem Impsum</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo illum aliquam excepturi distinctio molestias.</p>
-                        </div>
-                        <div class="column-4 box-insight-black">
-                            <div class="round-circle">1</div>
-                            <h3 class="title-box-insight">Lorem Impsum</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo illum aliquam excepturi distinctio molestias.</p>
-                        </div>
-                        <div class="column-5 box-insight-black">
-                            <div class="round-circle">1</div>
-                            <h3 class="title-box-insight">Lorem Impsum</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo illum aliquam excepturi distinctio molestias.</p>
-                        </div>
-                        <div class="column-6 box-insight-black">
-                            <div class="round-circle">1</div>
-                            <h3 class="title-box-insight">Lorem Impsum</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo illum aliquam excepturi distinctio molestias.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <footer>
         <div class="container">
@@ -217,7 +165,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/custom-script.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/custom-script.js"></script>
 </body>
 </html>
