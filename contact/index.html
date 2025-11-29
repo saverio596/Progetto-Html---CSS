@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO base -->
+    <meta name="description" content="Breve biografia di Saverio, web designer appassionato di design e sviluppo front-end.">
+    <!-- Favicon (best practice) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Contact - Saverio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" >
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "g-v7DVcsdeufnTycG",
+      });
+   })();
+</script>
+</head>
+<body>
+      <!-- header.html -->
+<header>
+   <div class="container"> 
+    <div class="row align-items-center">
+        <div class="col-md-4">
+        <a href="index.html" class="navbar-brand">
+            <div class="name-logo">Saverio.B</div>
+        </a>
+        </div>
+        <div class="col-md-8 text-end d-flex justify-content-end">
+         <div class="box-header-menu-contact">
+            <a href="/contact/" class="d-block text-decoration-none">   
+            <div class="btn-contact">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Contattami</span>
+                </span>
+            </div>
+            </a>    
+            <div class="button">
+                <a class="btn-open" href="#"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</header>
+<div class="overlay">
+	<div class="wrap">
+		<ul class="wrap-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="#">Portofolio</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>			
+	</div>
+</div>
+    <section class="section intro-contact">
+        <div class="container mt-5">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-8">
+                    <h1 class="title-page">Contact me<br>for work</h1>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div>
+                        Let’s make something together.<br> Fill out the form or just email me at<br>
+                        <a href="mailto:saverio.benedetto96@gmail.com" class="link-email">saverio.benedetto96@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h2 class="subtitle-section">GET IN TOUCH</h2>
+                </div>
+                <div class="col-12 col-md-8">
+                    <form id="contact-form">
+                        <div class="row" style="row-gap: 35px;">
+                            <div class="col-12 col-md-6">
+                                <label>Nome*</label>
+                                <input type="text" name="user_name" class="inputfield" placeholder="Nome" required />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Cognome*</label>
+                                <input type="text" name="user_cognome" class="inputfield" placeholder="Nome" required />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Email*</label>
+                                <input type="email" name="user_email" class="inputfield" placeholder="Email" required />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Telefono*</label>
+                                <input type="tel" name="user_tel" class="inputfield" placeholder="Telefono" required />
+                            </div>
+                            <div class="col-12">
+                                <label>Messaggio</label>
+                                <textarea name="message" class="inputfield" placeholder="Messaggio" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                 <button type="submit" class="btn-submit">Invia</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/custom-script.js"></script>
+</body>
+</html>
