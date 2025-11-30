@@ -376,7 +376,7 @@ textarea.inputfield{
   padding-top:20px;
 }
 .section.hero{
-  background: url(/assets/img/bio-saverio.webp);
+  background: url(../img/bio-saverio.webp);
     background-repeat: no-repeat;
     width: 100vw;
     background-size: cover;
