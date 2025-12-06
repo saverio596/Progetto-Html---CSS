@@ -51,7 +51,7 @@ line-height: 1;
   border-radius: 10px;
 }
 .txt-citazione{
-  font-size: 40px;
+  font-size: clamp(2.5rem, -3.1406rem + 16.25vw, 3.25rem);
   line-height: 1.1;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -64,7 +64,7 @@ line-height: 1;
   color: #fff;
 }
 .subtitle-section{
-  font-size: clamp(2rem, -6.1406rem + 16.25vw, 4.25rem);
+  font-size: clamp(2.5rem, -3.1406rem + 16.25vw, 4.25rem);
   line-height: 1.1;
 }
 .subtitle-box{
@@ -459,7 +459,7 @@ footer{
 .txt-emotion{
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(2.1875rem, -9.1406rem + 36.25vw, 6.25rem);
+    font-size: clamp(2.1875rem, -13.1406rem + 35.25vw, 6.25rem);
     line-height: 1;
 }
 .sticky_header.shrink {
@@ -586,10 +586,31 @@ footer{
 .line-experience{
   color: #fff;
 }
+.img-project{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid;
+}
+.img-project-home{
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid;
+}
 /********Media Query *********/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .experience-list-card{
     grid-column-gap: 20px;
+  }
+  .grid-6{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+  }
+  .list-project{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (max-width: 767px){
@@ -599,5 +620,12 @@ footer{
   }
   .list-project{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-6{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+  }
+  .custom-image {
+    height: 370px;
   }
 }

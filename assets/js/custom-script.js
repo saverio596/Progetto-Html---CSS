@@ -26,7 +26,7 @@ contactForm.addEventListener('submit', function(event) {
 
     emailjs.sendForm('service_8m2uyab', 'template_qv4yt89', this)
       .then(function() {
-        alert('Email inviata con successo!');
+        window.location.href = 'thank-you-page.html';
       }, function(error) {
         alert('Errore nell\'invio: ' + JSON.stringify(error));
       });
